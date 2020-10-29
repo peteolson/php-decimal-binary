@@ -7,13 +7,14 @@
 </form>
 
 <?php
-	$dec = $_POST["convert"];
+    $dec = $_POST["convert"];
     while ($dec>=1){
 		$bin = $dec % 2;
 		$dec = round($dec/2, 0, PHP_ROUND_HALF_DOWN);
 		$arr[] = $bin;
 		
     }
-	echo implode(array_reverse($arr));
+	
+    echo implode(array_reverse($arr));
 
 ?>
